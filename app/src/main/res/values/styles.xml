@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--Habilitar animaciones en las transiciones -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- Deshabilitar sobreposición entre animaciones-->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+
+        <!-- Transiciones para entrada, salida y elementos compartidos...-->
+        <!-- Habilitar superposición de los elementos compartidos entre transiciones -->
+        <item name="android:windowSharedElementsUseOverlay">true</item>
+
+
+        <!-- Asignacion de colores de la aplicacion...-->
+        <item name="android:windowBackground">@color/window_background</item>
+
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

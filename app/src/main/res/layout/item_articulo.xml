@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardProducto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    android:elevation="@dimen/cardview_default_elevation"
+    card_view:cardCornerRadius="10dp"
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cardImagenProducto"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/att100"
+                android:transitionName="compartir_imagen"
+                />
+
+            <TextView
+                android:id="@+id/cardTxtTituloProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cardImagenProducto"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="bottom"
+                android:background="#b4000000"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="NombreProducto"
+                android:textColor="@color/texto_blanco"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutDetallesProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardTxtTituloProducto"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cardTxtPrecioProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/accentColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardTxtMarcaProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardTxtModeloProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAgregarCarrito"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_anadir_carrito"
+                android:elevation="6dp"
+                android:gravity="bottom|center_horizontal"
+                android:layout_alignBottom="@+id/layoutDetallesProducto"
+                android:layout_alignEnd="@+id/cardImagenProducto"
+                android:layout_marginBottom="25dp" />
+        </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView >
